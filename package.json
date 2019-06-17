@@ -1,0 +1,42 @@
+{
+  "name": "openhab-google-assistant",
+  "version": "0.0.1",
+  "description": "OpenHAB Google Assistant implementation",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsc && cp src/*.json dist/",
+    "deploy": "npm run build && gcloud app deploy && gcloud app logs tail -s default",
+    "lint": "./node_modules/.bin/tslint -p .",
+    "start": "node dist/index.js",
+    "start:local": "node dist/index.js isLocal",
+    "test": "npm run lint"
+  },
+  "author": "RayBa82",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "^12.0.0"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.17.0",
+    "@types/morgan": "^1.7.35",
+    "actions-on-google": "^2.7.1",
+    "body-parser": "^1.19.0",
+    "colr": "^1.2.2",
+    "cors": "^2.8.5",
+    "ejs": "^2.5.7",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "googleapis": "^27.0.0",
+    "moment-timezone": "^0.5.25",
+    "morgan": "^1.9.1",
+    "node-fetch": "^1.6.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.17.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^3.5.2"
+  }
+}
