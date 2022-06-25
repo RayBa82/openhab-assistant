@@ -31,7 +31,7 @@
     "googleapis": "^27.0.0",
     "moment-timezone": "^0.5.25",
     "morgan": "^1.9.1",
-    "node-fetch": "^1.6.3",
+    "node-fetch": "^2.6.7",
     "request": "^2.88.0"
   },
   "devDependencies": {
