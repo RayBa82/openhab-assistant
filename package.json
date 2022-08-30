@@ -29,7 +29,7 @@
     "express": "^4.17.1",
     "express-session": "^1.16.2",
     "googleapis": "^27.0.0",
-    "moment-timezone": "^0.5.25",
+    "moment-timezone": "^0.5.35",
     "morgan": "^1.9.1",
     "node-fetch": "^1.6.3",
     "request": "^2.88.0"
